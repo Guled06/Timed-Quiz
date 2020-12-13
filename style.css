@@ -1,7 +1,11 @@
 body {
-    background-color: black;
+    background-color: rgb(20, 15, 15);
 }
 
 h1 {
     color: rebeccapurple;
+}
+
+p {
+    color: wheat;
 }
