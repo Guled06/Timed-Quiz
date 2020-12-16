@@ -17,3 +17,10 @@
 <hr>
 <br>
 <p>I built this application was HTML. Within my HTML, I used <a src="https://getbootstrap.com/docs/4.5/components/alerts/">Bootstrap</a> to assist me with styling the HTML. I also used my own CSS styling and linked both styles to my HTML page.
+
+<h1>SCREENSHOT OF MY TIMED-QUIZ APPLICATION</h1>
+<hr>
+<br>
+<br>
+
+<img src="imagesquiz/timedquiz.png">
