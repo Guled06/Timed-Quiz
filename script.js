@@ -88,7 +88,7 @@ function nextQuestion() {
   questionView.append(answerEl);
   currentQuestion++;
   var questionEl = document.createElement("p");
-  questionEl.textContent = yourQuestions[currentQuestion].question;
+  questionEl.textContent = yourQuestions[currentQuestion];
   questionView.append(questionEl);
   for (var i = 0; i < yourQuestions[currentQuestion].choices.length; i++) {
       var choiceEl = document.createElement("button");
@@ -103,10 +103,13 @@ function checkAnswer(event) {
   var answer = event.target.innerText;
   questionView.append(answerEl);
   console.log(answer);
-  if (answer === yourQuestions[currentQuestion]) {
-       answer.textContent = "Correct";
-  } else if (answer !== yourQuestions[currentQuestion]) {
-       answer.textContent = "Incorrect";
+  if (answer === yourQuestions[currentQuestion].question) {
+    answer.innerText = "Correct";
+    console.log("Correct");
+  } else if (answer !== yourQuestions[currentQuestion].question) {
+    answer.innerText = "Incorrect";
+    console.log("Incorrect");
+    counter = counter -5;
     }
 }
 
