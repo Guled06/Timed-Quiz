@@ -85,13 +85,17 @@ function nextQuestion() {
   answerEl.textContent = "";
   questionView.append(answerEl);
   currentQuestion++;
-  var questionEl = document.createElement("p");
-  questionEl.textContent = yourQuestions[currentQuestion];
-  questionView.append(questionEl);
-  for (var i = 0; i < yourQuestions[currentQuestion].choices.length; i++) {
-      var choiceEl = document.createElement("button");
-      choiceEl.textContent = yourQuestions[currentQuestion].choices[i];
-      questionView.append(choiceEl);
+  if (currentQuestion < yourQuestions.length) {
+    var questionEl = document.createElement("p");
+    questionEl.textContent = yourQuestions[currentQuestion];
+    questionView.append(questionEl);
+    for (var i = 0; i < yourQuestions[currentQuestion].choices.length; i++) {
+        var choiceEl = document.createElement("button");
+        choiceEl.textContent = yourQuestions[currentQuestion].choices[i];
+        questionView.append(choiceEl);
+    }
+  } else {
+    alert("You are done!");
   }
   
 }
