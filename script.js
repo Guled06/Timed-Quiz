@@ -46,9 +46,7 @@ var startBtn = document.querySelector("#start-quiz");
 var timerEl = document.getElementById("timer");
 var startView = document.querySelector("#start-view");
 var questionView = document.querySelector("#question-view");
-var questionEl = document.createElement("p");
 var answerEl = document.createElement("p")
-var choiceEl = document.createElement("button");
 var currentQuestion = 0;
 var counter = 60;
 var timerInterval;
@@ -99,21 +97,23 @@ function nextQuestion() {
 }
 
 
+
 function checkAnswer(event) {
   var answer = event.target.innerText;
   questionView.append(answerEl);
   console.log(answer);
-  if (answer === yourQuestions[currentQuestion].question) {
+  if (answer === yourQuestions[currentQuestion].answer) {
     answer.innerText = "Correct";
     console.log("Correct");
-  } else if (answer !== yourQuestions[currentQuestion].question) {
+  } else if (answer !== yourQuestions[currentQuestion].answer) {
     answer.innerText = "Incorrect";
     console.log("Incorrect");
     }
+
+    nextQuestion();
 }
 
+
 startBtn.addEventListener("click", startQuiz);
-questionView.addEventListener("click", nextQuestion);
-choiceEl.addEventListener("click", nextQuestion);
 questionView.addEventListener("click", checkAnswer);
 timerEl.textContent = counter;
