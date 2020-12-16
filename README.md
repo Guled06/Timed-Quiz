@@ -12,3 +12,8 @@
 <hr>
 <br>
 <p>This was my second time in working with Javascript during my experience at the UCSD Triology Coding Bootcamp. This was a homework assignment designed for each student to complete the homework assignment on his/her own, with the help of his/her tutor and other resources that are available. You can review my previous Javascript application that I completed <a src="https://guled06.github.io/Password-Generator/">HERE</a>. In my previous project/assignment, I designed an application that allowed the user to generate a random password using lowercase and uppercase letter, numbers and special characters.</p>
+
+<h1>Overall Application</h1>
+<hr>
+<br>
+<p>I built this application was HTML. Within my HTML, I used <a src="https://getbootstrap.com/docs/4.5/components/alerts/">Bootstrap</a> to assist me with styling the HTML. I also used my own CSS styling and linked both styles to my HTML page.
