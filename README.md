@@ -1,7 +1,7 @@
 <h1> INTRODUCTION</h1>
 <hr>
 <br>
-<p>This application was designed using Javascript to manipulate the DOM (Data Object Model). It was designed for the users of this application to take a timed quiz.</p>
+<p>This timed quiz application has multiple-choice questions. This app will run in the browser and it will feature dynamically updated HTML and CSS powered by Javascript codes. This application was designed to have a simple and responsive user interface.</p>
 <br>
 <h1>DESCRIPTION</h1>
 <hr>
