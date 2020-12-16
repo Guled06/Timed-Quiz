@@ -23,4 +23,4 @@
 <br>
 <br>
 
-<img src="imagesquiz/timedquiz.png">
+<img src="images.timedquiz/timedquiz.png">
