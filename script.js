@@ -30,7 +30,7 @@ var yourQuestions = [
       answer: "console.log"
   },
   {
-    question: "DOM is an abreviation for ____",
+    question: "DOM is an abreviation for ____?",
     choices: [
       "Data Operating Mode", 
       "Document Object Manipulation", 
@@ -38,7 +38,6 @@ var yourQuestions = [
       "Data Object Model"
     ],
       answer: "Document Object Model"
-            
   },
 ];
 
@@ -102,20 +101,15 @@ function nextQuestion() {
 
 function checkAnswer(event) {
   var answer = event.target.innerText;
+  questionView.append(answerEl);
   console.log(answer);
-  if (answer === yourQuestions[currentQuestion].answer) {
+  if (answer === yourQuestions[currentQuestion]) {
        answer.textContent = "Correct";
-       
-  }
-  else if (answer !== yourQuestions[currentQuestion].answer) {
+  } else if (answer !== yourQuestions[currentQuestion]) {
        answer.textContent = "Incorrect";
-  }
+    }
 }
-function handleAnswer() {
-  // if last question
-  // then stop timer
-  clearInterval(timerInterval);
-}
+
 startBtn.addEventListener("click", startQuiz);
 questionView.addEventListener("click", nextQuestion);
 choiceEl.addEventListener("click", nextQuestion);
@@ -208,19 +202,19 @@ questionView.addEventListener("click", checkAnswer);
 // }
  
   
-// // function checkAnswer(event) {
+// function checkAnswer(event) {
   
-// //     answerEl = document.createElement("p")
-// //     questionView.append(answerEl);
-// //     var answer = event.target.innerText
-// //     console.log(answer);
-// //     if (answer === yourQuestions[currentQuestion].answer) {
-// //         answerEl.textContent = "Correct";
-// //     }
-// //     else if (answer !== yourQuestions[currentQuestion].answer) {
-// //         answerEl.textContent = "Incorrect";
-// //     }
-// // }
+//     answerEl = document.createElement("p")
+//     questionView.append(answerEl);
+//     var answer = event.target.innerText
+//     console.log(answer);
+//     if (answer === yourQuestions[currentQuestion].answer) {
+//         answerEl.textContent = "Correct";
+//     }
+//     else if (answer !== yourQuestions[currentQuestion].answer) {
+//         answerEl.textContent = "Incorrect";
+//     }
+// }
 
 // function checkAnswer(event) {
 //   var answer = event.target.innerText
