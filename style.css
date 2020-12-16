@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(20, 15, 15);
+    background-color: palegoldenrod;
 }
 
 h1 {
@@ -7,8 +7,19 @@ h1 {
 }
 
 p {
-    color: white;
+    color: black;
     font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+}
+
+#time {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#timer {
+    font-weight: bold;
+    font-size: 50px;
+    color: yellow;
 }

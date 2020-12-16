@@ -14,16 +14,16 @@
         <div>
             Top Scores:
         </div>
-        <div>
-            Time Remaining:
+        <div class="time">
+            Time Remaining: <span id="timer">60</span>
         </div>
     </nav>
 </header>
 
-<div class="container mt-5">
+<div class="container mt-5" id="start-view">
     <div class="row">
         <div class="col-md">
-            <h1 class="text-center">Welcome To Your Timed Quiz</h1>
+            <h1 class="text-center">Welcome To Your Timed Quiz:</h1>
             <br>
             <div class="text-center">
                 <p>
@@ -33,15 +33,20 @@
             <br>
             <br>
             <div class="text-center">
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" id="start-quiz">
                     Press To Begin The Quiz
                 </button>
             </div>
         </div>
     </div>
 </div>
+<div id="question-view" class="text-center mt-5" style="display: none;">
+
+    QUESTIONS GO HERE
+</div>
 
 <script src="script.js"></script>
 
 </body>
 </html>
+
