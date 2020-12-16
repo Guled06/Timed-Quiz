@@ -50,7 +50,7 @@ var questionEl = document.createElement("p");
 var answerEl = document.createElement("p")
 var choiceEl = document.createElement("button");
 var currentQuestion = 0;
-var counter = 50;
+var counter = 60;
 var timerInterval;
 
 
@@ -109,7 +109,6 @@ function checkAnswer(event) {
   } else if (answer !== yourQuestions[currentQuestion].question) {
     answer.innerText = "Incorrect";
     console.log("Incorrect");
-    counter = counter -5;
     }
 }
 
@@ -117,3 +116,4 @@ startBtn.addEventListener("click", startQuiz);
 questionView.addEventListener("click", nextQuestion);
 choiceEl.addEventListener("click", nextQuestion);
 questionView.addEventListener("click", checkAnswer);
+timerEl.textContent = counter;
