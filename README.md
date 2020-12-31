@@ -1,6 +1,8 @@
 <h1> INTRODUCTION</h1>
 <hr>
 <br>
+Website Link : <a src="https://guled06.github.io/Timed-Quiz/">Timed Quiz</a>
+<br>
 <p>This timed quiz application has multiple-choice questions. This app will run in the browser and it will feature dynamically updated HTML and CSS powered by Javascript codes. This application was designed to have a simple and responsive user interface.</p>
 <br>
 <h1>DESCRIPTION</h1>
