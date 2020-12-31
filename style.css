@@ -1,25 +1,24 @@
-body {
-    background-color: tan;
-}
-
 h1 {
-    color: rebeccapurple;
+    color: red;
 }
 
-p {
-    color: black;
-    font-size: x-large;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+.start {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(200, 203, 204);
+    font-size: xx-large;
 }
 
-#time {
-    font-weight: bold;
-    font-size: x-large;
+#start {
+    background-color: rgb(173, 68, 68);
 }
 
-#timer {
-    font-weight: bold;
-    font-size: 50px;
-    color: yellow;
+#end-screen {
+    text-align: center;
+    margin-top: 100px;
 }
+
+h2 {
+    color: white;
+}
+
